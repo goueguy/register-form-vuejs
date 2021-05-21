@@ -1,0 +1,54 @@
+
+<template>
+    <div class="w-full max-w-lg mx-auto">
+        <h1 class="mb-3">CONTACTEZ NOUS</h1>
+        <form action="#" class="bg-white p-8 pt-6 shadow-lg">
+            <div class="mb-2">
+                <label for="lastName" class="mb-3 block  text-sm text-gray-500 text-left font-bold">Nom</label>
+                <input  type="text" v-model="lastName" placeholder="Nom" class="p-2 mb-3 rounded w-full block border">
+            </div>
+            <div class="mb-2">
+                <label for="firstName" class="mb-3 block  text-sm text-gray-500 text-left font-bold">Prénoms</label>
+                <input type="text"  v-model="firstName"  class="mb-3 p-2 rounded w-full block border">
+            </div>
+            <div class="mb-2">
+                <label for="email" class="mb-3 block  text-sm text-gray-500 text-left font-bold">Adresse Email</label>
+                <input type="email" v-model="email"   class="mb-3 p-2 rounded w-full block border">
+            </div>
+
+            <div class="mb-2">
+                <label for="telephone" class="mb-3 block  text-sm text-gray-500 text-left font-bold">Numéro de Téléphone</label>
+                <input type="tel"  v-model="telephone" placeholder="Téléphone" class="mb-3 p-2 rounded w-full block border">
+            </div>
+            <button type="submit" v-on:click="loginData">SOUMETTRE</button>
+            
+        </form>
+    </div>
+    
+</template>
+<style>
+    body{
+        background-color: #EDF2F7;
+    }
+</style>
+<script>
+export default {
+    name: 'Contact',
+    data(){
+        return{
+            lastName: "",
+            firstName: "",
+            telephone: "",
+            email: "",
+            
+        }
+    },
+    methods:{
+        loginData(){
+            
+            
+        }
+    }
+    
+}
+</script>
